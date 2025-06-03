@@ -60,11 +60,27 @@
                                 <li><i class="fas fa-check text-success me-2"></i>Social media marketing</li>
                                 <li><i class="fas fa-check text-success me-2"></i>Content marketing</li>
                                 <li><i class="fas fa-check text-success me-2"></i>Analytics & reporting</li>
+                                {% elif course.id == 'devops' %}
+                                <li><i class="fas fa-check text-success me-2"></i>CI/CD pipeline setup</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Docker & Kubernetes</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Infrastructure automation</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Monitoring & logging</li>
+                                {% elif course.id == 'aws_cloud' %}
+                                <li><i class="fas fa-check text-success me-2"></i>AWS core services</li>
+                                <li><i class="fas fa-check text-success me-2"></i>EC2 & cloud architecture</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Security & compliance</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Cost optimization</li>
                                 {% endif %}
                             </ul>
                         </div>
                     </div>
                     <div class="card-footer bg-light">
+                        <div class="d-flex gap-2 mb-2">
+                            <button class="btn btn-outline-secondary btn-sm flex-fill" disabled>
+                                <i class="fas fa-file-pdf me-1"></i>Course PDF
+                                <small class="d-block text-muted">Coming Soon</small>
+                            </button>
+                        </div>
                         <a href="{{ url_for('enroll', course=course.id) }}" class="btn btn-danger w-100">
                             <i class="fas fa-user-plus me-2"></i>Enroll in {{ course.name }}
                         </a>

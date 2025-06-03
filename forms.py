@@ -32,7 +32,9 @@ class EnrollmentForm(FlaskForm):
         ('python_programming', 'Python Programming'),
         ('web_development', 'Web Development'),
         ('data_science', 'Data Science'),
-        ('digital_marketing', 'Digital Marketing')
+        ('digital_marketing', 'Digital Marketing'),
+        ('devops', 'DevOps Engineering'),
+        ('aws_cloud', 'AWS Cloud Computing')
     ])
     
     message = TextAreaField('Additional Message', [
