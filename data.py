@@ -1,0 +1,149 @@
+# In-memory storage for enrollment and contact data
+enrollments = []
+contacts = []
+
+# Course data structure
+courses_data = {
+    'accounting': {
+        'title': 'Career in Accounts',
+        'description': 'Master the fundamentals and advanced concepts of accounting with our comprehensive courses.',
+        'courses': [
+            {
+                'id': 'corporate_accountant',
+                'name': 'Corporate Accountant Training',
+                'duration': '6 months (3 phases)',
+                'description': 'Comprehensive three-phase program covering all aspects of corporate accounting',
+                'phases': [
+                    {
+                        'phase': 1,
+                        'title': 'Foundation Phase',
+                        'duration': '2 months',
+                        'topics': ['Basic Accounting Principles', 'Financial Statements', 'Journal Entries', 'Ledger Management']
+                    },
+                    {
+                        'phase': 2,
+                        'title': 'Intermediate Phase',
+                        'duration': '2 months',
+                        'topics': ['Advanced Accounting', 'Cost Accounting', 'Management Accounting', 'Tax Accounting']
+                    },
+                    {
+                        'phase': 3,
+                        'title': 'Advanced Phase',
+                        'duration': '2 months',
+                        'topics': ['Corporate Finance', 'Audit & Assurance', 'Financial Analysis', 'Real-world Case Studies']
+                    }
+                ]
+            },
+            {
+                'id': 'basic_accounting',
+                'name': 'Basic Accounting',
+                'duration': '2 months',
+                'description': 'Learn the fundamentals of accounting including bookkeeping, financial statements, and basic principles.'
+            },
+            {
+                'id': 'advanced_accounting',
+                'name': 'Advanced Accounting',
+                'duration': '3 months',
+                'description': 'Advanced topics including consolidation, partnerships, and complex financial transactions.'
+            }
+        ]
+    },
+    'stock_market': {
+        'title': 'Career in Stock Market',
+        'description': 'Learn trading, investment strategies, and market analysis with our expert-designed courses.',
+        'courses': [
+            {
+                'id': 'stock_market_basics',
+                'name': 'Stock Market Basics',
+                'duration': '1 month',
+                'description': 'Introduction to stock markets, trading fundamentals, and basic investment concepts.'
+            },
+            {
+                'id': 'technical_analysis',
+                'name': 'Technical Analysis',
+                'duration': '2 months',
+                'description': 'Learn chart patterns, indicators, and technical analysis tools for trading decisions.'
+            },
+            {
+                'id': 'fundamental_analysis',
+                'name': 'Fundamental Analysis',
+                'duration': '2 months',
+                'description': 'Analyze company financials, market conditions, and economic factors for investment decisions.'
+            },
+            {
+                'id': 'trading_strategies',
+                'name': 'Trading Strategies',
+                'duration': '3 months',
+                'description': 'Advanced trading strategies, risk management, and portfolio optimization techniques.'
+            }
+        ]
+    },
+    'it': {
+        'title': 'Career in IT',
+        'description': 'Build your technology career with cutting-edge programming and digital skills courses.',
+        'courses': [
+            {
+                'id': 'python_programming',
+                'name': 'Python Programming',
+                'duration': '3 months',
+                'description': 'Complete Python programming course from basics to advanced concepts including frameworks.'
+            },
+            {
+                'id': 'web_development',
+                'name': 'Web Development',
+                'duration': '4 months',
+                'description': 'Full-stack web development including HTML, CSS, JavaScript, and backend technologies.'
+            },
+            {
+                'id': 'data_science',
+                'name': 'Data Science',
+                'duration': '5 months',
+                'description': 'Learn data analysis, machine learning, and statistical modeling with Python and R.'
+            },
+            {
+                'id': 'digital_marketing',
+                'name': 'Digital Marketing',
+                'duration': '2 months',
+                'description': 'SEO, social media marketing, content strategy, and online advertising techniques.'
+            }
+        ]
+    }
+}
+
+def add_enrollment(data):
+    """Add new enrollment to in-memory storage"""
+    enrollments.append(data)
+    return len(enrollments)
+
+def add_contact(data):
+    """Add new contact message to in-memory storage"""
+    contacts.append(data)
+    return len(contacts)
+
+def get_all_enrollments():
+    """Get all enrollments"""
+    return enrollments
+
+def get_all_contacts():
+    """Get all contact messages"""
+    return contacts
+
+def get_course_by_id(course_id):
+    """Get course details by ID"""
+    for category in courses_data.values():
+        for course in category['courses']:
+            if course['id'] == course_id:
+                return course
+    return None
+
+def get_all_courses_for_search():
+    """Get all courses formatted for search dropdown"""
+    courses = []
+    for category in courses_data.values():
+        for course in category['courses']:
+            courses.append({
+                'id': course['id'],
+                'name': course['name'],
+                'category': category['title']
+            })
+    return courses
