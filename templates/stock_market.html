@@ -20,9 +20,44 @@
     </div>
 </section>
 
+<!-- Training Environment -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-dark">Professional Trading Environment</h2>
+            <p class="lead text-muted">Learn market analysis and trading in our well-equipped training facilities</p>
+        </div>
+        
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='images/classroom1.jpg') }}" class="card-img-top" style="height: 250px; object-fit: cover;" alt="SACDAP Trading Lab">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Live Trading Lab</h5>
+                        <p class="card-text">Experience real-time market data and trading platforms with individual computer workstations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='images/office1.jpg') }}" class="card-img-top" style="height: 250px; object-fit: cover;" alt="SACDAP Consultation Area">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Expert Consultation</h5>
+                        <p class="card-text">Get personalized guidance from market experts and experienced traders in our consultation area.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Courses List -->
 <section class="py-5">
     <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-dark">Stock Market Courses</h2>
+            <p class="lead text-muted">Master trading and investment with our comprehensive programs</p>
+        </div>
         <div class="row g-4">
             {% for course in courses.courses %}
             <div class="col-lg-6">

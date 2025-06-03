@@ -20,8 +20,48 @@
     </div>
 </section>
 
-<!-- Featured Course - Corporate Accountant Training -->
+<!-- Facility Showcase for Accounts -->
 <section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-dark">Professional Learning Environment</h2>
+            <p class="lead text-muted">Experience accounting education in our modern, well-equipped facilities</p>
+        </div>
+        
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='images/office1.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="SACDAP Reception Area">
+                    <div class="card-body text-center">
+                        <h6 class="card-title text-danger">Reception & Counseling</h6>
+                        <p class="card-text small">Professional guidance and course consultation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='images/classroom1.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="SACDAP Training Lab">
+                    <div class="card-body text-center">
+                        <h6 class="card-title text-danger">Computer Training Lab</h6>
+                        <p class="card-text small">Digital accounting software training</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='images/classroom2.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="SACDAP Classroom">
+                    <div class="card-body text-center">
+                        <h6 class="card-title text-danger">Theory Classrooms</h6>
+                        <p class="card-text small">Interactive accounting concept learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Course - Corporate Accountant Training -->
+<section class="py-5">
     <div class="container">
         {% for course in courses.courses %}
             {% if course.id == 'corporate_accountant' %}

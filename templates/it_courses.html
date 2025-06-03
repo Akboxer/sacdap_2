@@ -20,9 +20,44 @@
     </div>
 </section>
 
+<!-- IT Lab Showcase -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-dark">Our IT Training Infrastructure</h2>
+            <p class="lead text-muted">State-of-the-art computer labs equipped with latest technology</p>
+        </div>
+        
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='images/classroom1.jpg') }}" class="card-img-top" style="height: 300px; object-fit: cover;" alt="SACDAP IT Training Lab">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Modern Computer Lab</h5>
+                        <p class="card-text">Individual workstations with high-performance computers for hands-on programming and development training.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='images/classroom2.jpg') }}" class="card-img-top" style="height: 300px; object-fit: cover;" alt="SACDAP Smart Classroom">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Interactive Learning Environment</h5>
+                        <p class="card-text">Air-conditioned smart classrooms with projectors and modern teaching aids for effective learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Courses List -->
 <section class="py-5">
     <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-dark">Our IT Courses</h2>
+            <p class="lead text-muted">Choose from our comprehensive technology training programs</p>
+        </div>
         <div class="row g-4">
             {% for course in courses.courses %}
             <div class="col-lg-6">
