@@ -13,6 +13,7 @@ courses_data = {
                 'name': 'Corporate Accountant Training',
                 'duration': '6 months (3 phases)',
                 'description': 'Comprehensive three-phase program covering all aspects of corporate accounting',
+                'pdf_resource': None,  # Space for future PDF upload
                 'phases': [
                     {
                         'phase': 1,
@@ -38,13 +39,15 @@ courses_data = {
                 'id': 'basic_accounting',
                 'name': 'Basic Accounting',
                 'duration': '2 months',
-                'description': 'Learn the fundamentals of accounting including bookkeeping, financial statements, and basic principles.'
+                'description': 'Learn the fundamentals of accounting including bookkeeping, financial statements, and basic principles.',
+                'pdf_resource': None  # Space for future PDF upload
             },
             {
                 'id': 'advanced_accounting',
                 'name': 'Advanced Accounting',
                 'duration': '3 months',
-                'description': 'Advanced topics including consolidation, partnerships, and complex financial transactions.'
+                'description': 'Advanced topics including consolidation, partnerships, and complex financial transactions.',
+                'pdf_resource': None  # Space for future PDF upload
             }
         ]
     },
@@ -56,25 +59,29 @@ courses_data = {
                 'id': 'stock_market_basics',
                 'name': 'Stock Market Basics',
                 'duration': '1 month',
-                'description': 'Introduction to stock markets, trading fundamentals, and basic investment concepts.'
+                'description': 'Introduction to stock markets, trading fundamentals, and basic investment concepts.',
+                'pdf_resource': None  # Space for future PDF upload
             },
             {
                 'id': 'technical_analysis',
                 'name': 'Technical Analysis',
                 'duration': '2 months',
-                'description': 'Learn chart patterns, indicators, and technical analysis tools for trading decisions.'
+                'description': 'Learn chart patterns, indicators, and technical analysis tools for trading decisions.',
+                'pdf_resource': None  # Space for future PDF upload
             },
             {
                 'id': 'fundamental_analysis',
                 'name': 'Fundamental Analysis',
                 'duration': '2 months',
-                'description': 'Analyze company financials, market conditions, and economic factors for investment decisions.'
+                'description': 'Analyze company financials, market conditions, and economic factors for investment decisions.',
+                'pdf_resource': None  # Space for future PDF upload
             },
             {
                 'id': 'trading_strategies',
                 'name': 'Trading Strategies',
                 'duration': '3 months',
-                'description': 'Advanced trading strategies, risk management, and portfolio optimization techniques.'
+                'description': 'Advanced trading strategies, risk management, and portfolio optimization techniques.',
+                'pdf_resource': None  # Space for future PDF upload
             }
         ]
     },
@@ -86,25 +93,43 @@ courses_data = {
                 'id': 'python_programming',
                 'name': 'Python Programming',
                 'duration': '3 months',
-                'description': 'Complete Python programming course from basics to advanced concepts including frameworks.'
+                'description': 'Complete Python programming course from basics to advanced concepts including frameworks.',
+                'pdf_resource': None  # Space for future PDF upload
             },
             {
                 'id': 'web_development',
                 'name': 'Web Development',
                 'duration': '4 months',
-                'description': 'Full-stack web development including HTML, CSS, JavaScript, and backend technologies.'
+                'description': 'Full-stack web development including HTML, CSS, JavaScript, and backend technologies.',
+                'pdf_resource': None  # Space for future PDF upload
             },
             {
                 'id': 'data_science',
                 'name': 'Data Science',
                 'duration': '5 months',
-                'description': 'Learn data analysis, machine learning, and statistical modeling with Python and R.'
+                'description': 'Learn data analysis, machine learning, and statistical modeling with Python and R.',
+                'pdf_resource': None  # Space for future PDF upload
             },
             {
                 'id': 'digital_marketing',
                 'name': 'Digital Marketing',
                 'duration': '2 months',
-                'description': 'SEO, social media marketing, content strategy, and online advertising techniques.'
+                'description': 'SEO, social media marketing, content strategy, and online advertising techniques.',
+                'pdf_resource': None  # Space for future PDF upload
+            },
+            {
+                'id': 'devops',
+                'name': 'DevOps Engineering',
+                'duration': '4 months',
+                'description': 'Master CI/CD, containerization, automation, and cloud infrastructure management.',
+                'pdf_resource': None  # Space for future PDF upload
+            },
+            {
+                'id': 'aws_cloud',
+                'name': 'AWS Cloud Computing',
+                'duration': '3 months',
+                'description': 'Comprehensive AWS training covering EC2, S3, Lambda, and cloud architecture.',
+                'pdf_resource': None  # Space for future PDF upload
             }
         ]
     }
